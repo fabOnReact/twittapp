@@ -63,3 +63,8 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Added from the developer
+todolist
+app/jobs/
+config/secrets.yml
