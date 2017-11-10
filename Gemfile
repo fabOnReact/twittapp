@@ -49,7 +49,6 @@ group :development, :test do
 end
 
 group :test do
-  gem 'faker'
   gem 'database_cleaner'
   gem 'launchy'
   gem 'rspec-console'
@@ -59,7 +58,6 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'faker'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -75,3 +73,4 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'rails_12factor', group: :production
+gem 'faker'

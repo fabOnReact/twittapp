@@ -67,4 +67,3 @@ bower.json
 # Added from the developer
 todolist
 app/jobs/
-config/secrets.yml
