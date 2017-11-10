@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: twittapp_development
+  username: fabrizio
+  password:  
+
+test:
+  <<: *default
+  database: twittapp_test
+
+production:
+  <<: *default
+  database: twittapp_production
