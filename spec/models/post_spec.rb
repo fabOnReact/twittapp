@@ -24,7 +24,6 @@ RSpec.describe Post, type: :model do
 		end
 
 		context 'search query does not give a result' do	
-
 			it 'should not find any message' do
 				Post.where(name: post.name).destroy_all
 				Post.where(message: post.message).destroy_all
