@@ -74,3 +74,4 @@ gem 'jquery-ui-rails'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'rails_12factor', group: :production
