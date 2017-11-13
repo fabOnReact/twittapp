@@ -1,10 +1,9 @@
+require 'controller_modules'
+
 class PostsController < ApplicationController
+  include Twitter
   def index
-    if params[:search]
-      @posts = Post.search(params[:search]).order('created_at DESC')
-    else
-      @posts = Post.all.order('created_at DESC')
-    end
+    @search = client.search(params[:search], :lang => "en").take(10).collect if params[:search]
   end
 
   def new

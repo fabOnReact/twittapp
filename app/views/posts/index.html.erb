@@ -15,14 +15,19 @@
 	    </div>
 	<% end %>
 
-	<div class='row'>
-	<% @posts.each do |post| %>
-		<div class='col-sm-4'>
-			<%= post.name %>
-		</div>
-		<div class='col-sm-8'>
-			<%= post.message %>
-		</div>
+	<% if params[:search] %>
+		<% @search.each do |tweet| %>
+			<div class='row'>
+				<div class='col-sm-4'>
+					<%# binding.pry %>
+					<%# image = .to_s %>
+					<img src=<%= tweet.attrs[:user][:profile_image_url_https] %> >
+				</div>
+				<div class='col-sm-8'>
+					<%= tweet.text %>
+				</div>
+			</div>
+		<% end %>
 	<% end %>
-</div>
+
 
