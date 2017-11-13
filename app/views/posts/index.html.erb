@@ -15,7 +15,7 @@
 	    </div>
 	<% end %>
 
-	<% if params[:search] %>
+	<% if params[:search].present? %>
 		<% @search.each do |tweet| %>
 			<div class='row'>
 				<div class='col-sm-4'>
