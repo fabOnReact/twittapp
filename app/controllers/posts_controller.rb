@@ -1,5 +1,4 @@
 require 'controller_modules'
-require 'classes/enumerator'
 
 class PostsController < ApplicationController
   include Twitter
