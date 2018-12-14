@@ -1,3 +1,5 @@
+Currently unmantained
+
 # twittapp
 Application built for a job interview
 
